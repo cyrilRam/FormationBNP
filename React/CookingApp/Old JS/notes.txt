@@ -1,0 +1,9 @@
+1. Tester API
+
+2. Aller les chercher dans axios
+
+3. Stocker avec use State
+
+4.Afficher avec un map, mettre logique dans un composant Card.js
+
+5. Rechercher ce qui est tape dans input

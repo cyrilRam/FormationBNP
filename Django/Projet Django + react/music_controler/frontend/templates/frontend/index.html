@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Music Controller</title>
+    {% load static %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <link rel="stylesheet" type="text/css" href="{% static "css/index.css" %}"
+    />
+  </head>
+  <body>
+    <div id="main">
+      <div id="app"></div>
+    </div>
+
+    <!-- Exemple avec un Formulaire -->
+    <section>
+      <h2>Formulaire</h2>
+      <form action="/action.php" method="psot">
+        <label for="name">Nom </label>
+        <input id="name" type="text" placeholder="Entrez votre nom" />
+        <br />
+        <label for="age">Age</label>
+        <input id="age" type="number" min="0" max="99" step="1" value="18" />
+        <br />
+        <!-- Input Select -->
+        <label for="gender">Genre</label>
+        <select id="gender">
+          <option value="homme">Homme</option>
+          <option value="femme">Femme</option>
+        </select>
+        <br />
+        <!-- Input radio -->
+        <div>
+          <!-- Avec name je peux en choisir que un  -->
+          <!-- checj par default -->
+          <input type="radio" name="type" id="humain" checked />
+          <label for="humain">Homme</label>
+
+          <input type="radio" name="type" id="chien" />
+          <label for="chien">Chien</label>
+
+          <input type="radio" name="type" id="cat" />
+          <label for="cat">Chat</label>
+        </div>
+        <!-- Text Are -->
+        <textarea
+          placeholder="Entrez votre demande"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <br />
+        <!-- Checkbox -->
+        <label><input type="checkbox" />Accepter les CGV</label>
+        <br />
+        <!-- Bouton Valider -->
+        <input type="submit" value="Valider" />
+        <br />
+      </form>
+    </section>
+
+    <script>
+      src="{% static "frontend/main.js" %}"
+    </script>
+  </body>
+</html>

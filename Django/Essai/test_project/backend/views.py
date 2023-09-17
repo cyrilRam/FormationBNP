@@ -4,12 +4,12 @@ from rest_framework.response import Response
 from .serializers import EleveSerializer
 from .models import Eleve
 
-
+#View qui sert a afficher les eleves
 class EleveView(generics.ListAPIView):
     queryset = Eleve.objects.all()
     serializer_class = EleveSerializer
 
-
+#View pour creer un eleve
 class EleveCreateView(generics.CreateAPIView):
     queryset = Eleve.objects.all()
     serializer_class = EleveSerializer

@@ -1,0 +1,17 @@
+.form-create {
+}
+
+button {
+  width: 150px; /* Ajustez la largeur selon vos besoins */
+  height: 30px; /* Ajustez la hauteur selon vos besoins */
+  margin: 0;
+  margin: 20px;
+  background-color: rgb(88, 111, 228);
+  border: none;
+  cursor: pointer; /* Change le curseur en mode cliquable */
+  color: rgb(238, 238, 238);
+
+  &:hover {
+    color: rgba(238, 238, 238, 0.479);
+  }
+}

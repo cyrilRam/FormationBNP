@@ -4,7 +4,7 @@ from django.db import models
 class Eleve(models.Model):
     nom = models.CharField(max_length=20, default="", unique=True)
     prenom = models.CharField(max_length=20, default="", unique=True)
-    age = models.IntegerField()
+    age = models.IntegerField(null=False, default=18)
     SEXE_CHOICES = (
         ('homme', 'Homme'),
         ('femme', 'Femme'),
